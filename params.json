@@ -1,0 +1,1 @@
+{"name":"CMP=CLASS.METHOD(PARAMETERS)","tagline":"","body":"# What is CMP\r\nCMP = Class.Method(Param)\r\n\r\n* Target of Version 1.0 is to release the PHP-based web/concole infrastructure with a login/usermgr/logout example.\r\n\r\n# KISS\r\nKeep it simply stupid\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}

@@ -1,0 +1,713 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="code_standard.zh-cn.utf8.files/filelist.xml">
+<link rel=Edit-Time-Data href="code_standard.zh-cn.utf8.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>==CMP/MG框架代码标准 beta 20150628</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="chmetcnv"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>wj</o:Author>
+  <o:LastAuthor>wj</o:LastAuthor>
+  <o:Revision>58</o:Revision>
+  <o:TotalTime>60</o:TotalTime>
+  <o:Created>2015-07-06T05:29:00Z</o:Created>
+  <o:LastSaved>2015-07-06T06:34:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>993</o:Words>
+  <o:Characters>1800</o:Characters>
+  <o:Company>x</o:Company>
+  <o:Lines>91</o:Lines>
+  <o:Paragraphs>68</o:Paragraphs>
+  <o:CharactersWithSpaces>1894</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 1.0cm 1.0cm 1.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1159538895;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2000459342 898793268 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:3;
+	mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US>==CMP</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>框架衍生代码标准</span> </b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>（</span><span
+lang=EN-US>20150706</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span><span lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:lime;mso-highlight:lime'>=</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>文档目标</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>让</span><span lang=EN-US>MG</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>框架的衍生代码规范化</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:lime;mso-highlight:lime'>=</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>框架的中心设计思路</span> <span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span> <span lang=EN-US><a href="http://cmptech.info/">http://cmpTech.info</a></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>）</span></p>
+
+<p class=MsoNormal><span lang=EN-US>HTTP</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>入口</span><span
+lang=EN-US> <span class=SpellE>index.php?<span class=GramE>class</span></span>=$<span
+class=SpellE>className&amp;method</span>=$<span class=SpellE>methodName&amp;param</span>=XXXXX</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>其中：</span></p>
+
+<p class=MsoNormal><span lang=EN-US>1</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、参数名</span><span
+lang=EN-US> class/method/<span class=SpellE>param</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>可以简化为</span><span lang=EN-US> _c/_m/_p </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（即</span><span lang=EN-US>CMP</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的来源，我们把接口归一化）</span></p>
+
+<p class=MsoNormal><span lang=EN-US>2</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><span
+lang=EN-US>_p</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>默认为</span> <span class=SpellE><span
+lang=EN-US>json</span></span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>化（<b
+style='mso-bidi-font-weight:normal'><span style='background:yellow;mso-highlight:
+yellow'>且一般用</span></b></span><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'>POST</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";background:yellow;
+mso-highlight:yellow'>方法传入</span></b><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>），框架兼容但不欢迎用</span><span
+lang=EN-US>GET</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>显式传入</span></p>
+
+<p class=MsoNormal><span lang=EN-US>3</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、参见下面【</span><span
+lang=EN-US>URL</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>重写】该段描述。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Class $<span class=SpellE>className</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US>{</span></p>
+
+<p class=MsoNormal style='text-indent:5.25pt;mso-char-indent-count:.5'><span
+class=GramE><span lang=EN-US>public</span></span><span lang=EN-US> function $<span
+class=SpellE>methodName</span>($<span class=SpellE>param</span>){</span></p>
+
+<p class=MsoNormal style='text-indent:5.25pt;mso-char-indent-count:.5'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='background:yellow;
+mso-highlight:yellow'>//</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>默认</span><span
+class=SpellE><span lang=EN-US style='background:yellow;mso-highlight:yellow'>param</span></span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";background:yellow;
+mso-highlight:yellow'>即为</span><span lang=EN-US style='background:yellow;
+mso-highlight:yellow'>_p</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>，但如果</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'> _p </span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";background:yellow;
+mso-highlight:yellow'>为空，框架要把</span><span lang=EN-US style='background:yellow;
+mso-highlight:yellow'> $_REQUEST </span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";background:yellow;mso-highlight:yellow'>作为</span><span
+class=SpellE><span lang=EN-US style='background:yellow;mso-highlight:yellow'>param</span></span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";background:yellow;
+mso-highlight:yellow'>传入此处。</span><span lang=EN-US>** </span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>约定</span><span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:5.25pt;mso-char-indent-count:.5'><span
+lang=EN-US>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:lime;mso-highlight:lime'>=</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>接口规范</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>基于上述中心设计思路，</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>用</span><span class=SpellE><span
+lang=EN-US>AppAuthBase.php</span></span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>来限制外部访问的入口类一般为</span></p>
+
+<p class=MsoNormal><span lang=EN-US><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:414.75pt;
+ height:62.25pt'>
+ <v:imagedata src="code_standard.zh-cn.utf8.files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=553 height=83
+src="code_standard.zh-cn.utf8.files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-US>** </span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>同时</span><span
+lang=EN-US> <span class=SpellE>AppAuth</span></span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>可以随意扩展来达到基本的</span><span
+class=SpellE><span lang=EN-US>Api</span></span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>对外权限检查</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>其中</span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US style='background:yellow;
+mso-highlight:yellow'>ApiXXX</span></span><span lang=EN-US style='background:
+yellow;mso-highlight:yellow'> </span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";background:yellow;
+mso-highlight:yellow'>类一般指用</span><span lang=EN-US style='background:yellow;
+mso-highlight:yellow'> <span class=SpellE>json</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>化的内容返回</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:yellow;mso-highlight:
+yellow'>Web</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";background:yellow;mso-highlight:yellow'>类一般接口为</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'> html/plain text</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>的内容返回</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US style='background:yellow;
+mso-highlight:yellow'>Wap</span></span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";background:yellow;
+mso-highlight:yellow'>针对手机浏览器优化带宽的</span><span lang=EN-US style='background:
+yellow;mso-highlight:yellow'> html/text </span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+background:yellow;mso-highlight:yellow'>返回</span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>ussd</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>针对</span><span class=SpellE><span lang=EN-US>ussd</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>协议的返回【未实战】</span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>sms</span></span><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>针对</span> <span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>短信接口的返回【未实战】</span></p>
+
+<p class=MsoNormal><st1:chmetcnv TCSC="0" NumberType="1" Negative="False"
+HasSpace="False" SourceValue="3" UnitName="g" w:st="on"><span lang=EN-US>3g</span></st1:chmetcnv><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>针对</span> <span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>网络较好的手机浏览器的</span><span
+lang=EN-US>html/text</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>返回【基本抛弃】</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Mobile</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>【备用，基本不用】</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:lime;mso-highlight:lime'>=</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>关于</span><span
+lang=EN-US style='background:lime;mso-highlight:lime'>URL</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>重定向</span><span
+lang=EN-US style='background:lime;mso-highlight:lime'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>为了使得访问借口变得优变一点，通过修改</span><span
+lang=EN-US> <span class=SpellE>yaml</span></span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><span
+class=SpellE><span lang=EN-US>htaccess</span></span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><span
+lang=EN-US>apache</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>配置等把</span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>index.php<span
+class=GramE>?class</span></span></span><span lang=EN-US>=$<span class=SpellE>className&amp;method</span>=$<span
+class=SpellE>methodName</span></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>重定向</span></p>
+
+<p class=MsoNormal><span lang=EN-US>,$<span class=SpellE>className,$methodName.web</span>
+</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（通常为</span><span lang=EN-US> <span
+class=SpellE>WebXXX</span></span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>）</span></p>
+
+<p class=MsoNormal><span lang=EN-US>,$<span class=SpellE>className,$methodName.json</span>
+</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>（通常为</span><span lang=EN-US> <span
+class=SpellE>WebXXX</span></span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>、</span><span
+class=SpellE><span lang=EN-US>ApiXXX</span></span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>类、</span><span
+class=SpellE><span lang=EN-US>JsonXXX</span></span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>类）</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:yellow;mso-highlight:
+yellow'>$<span class=SpellE>className,$methodName.api</span> </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>（更通用模式）</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>特别地，</span></b><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>伪静态</span><span
+lang=EN-US> <span class=SpellE>XXX.shtml</span></span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>有特别处理，将<b
+style='mso-bidi-font-weight:normal'>跳过</b></span><span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US>php</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>逻辑处理</span></b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，直接进入模板</span><span lang=EN-US> shtml.XXX.html</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:lime;mso-highlight:lime'>=</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>其它类命名</span><span
+lang=EN-US style='background:lime;mso-highlight:lime'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>LgcYYY</span></span><span
+lang=EN-US><span style='mso-spacerun:yes'>  </span><span class=SpellE>Lgc</span>
+for Logic</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，即业务逻辑层</span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>AppXXX</span></span><span
+lang=EN-US><span style='mso-spacerun:yes'>   </span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>应用层级的一些对象类</span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>OrmZZZ</span></span><span
+lang=EN-US><span style='mso-spacerun:yes'>   </span><span class=SpellE>Orm</span>
+for Object related model</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，主要是比较纯粹的数据库封装，尽量不做过多的逻辑。而且</span>
+<span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>目前主要采用</span><span lang=EN-US> <span class=SpellE>RedBeanPHP</span>
+</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的封装方法。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:yellow;mso-highlight:
+yellow'>* </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";background:yellow;mso-highlight:yellow'>以上直观理解为</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'> <span class=SpellE>Api</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>层</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'>=&gt;</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>（参数简单过滤、权限简单校验）</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'>=&gt; <span
+class=SpellE>Lgc</span></span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";background:yellow;
+mso-highlight:yellow'>逻辑层</span><span style='background:yellow;mso-highlight:
+yellow'> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";background:yellow;mso-highlight:yellow'>（含深度校验）</span><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'>=&gt;</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>计算、操作</span><span
+style='background:yellow;mso-highlight:yellow'> </span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+background:yellow;mso-highlight:yellow'>业务对象（</span><span class=SpellE><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'>AppXXX</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>）及</span><span
+style='background:yellow;mso-highlight:yellow'> </span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+background:yellow;mso-highlight:yellow'>数据对象（</span><span class=SpellE><span
+lang=EN-US style='background:yellow;mso-highlight:yellow'>OrmZZZ</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>）。</span><span
+style='background:yellow;mso-highlight:yellow'> </span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+background:yellow;mso-highlight:yellow'>但由于历史原因，部分</span><span lang=EN-US
+style='background:yellow;mso-highlight:yellow'> App/<span class=SpellE>Orm</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:yellow;mso-highlight:yellow'>对象可能不是分得那么清晰。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:lime;mso-highlight:lime'>=</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>命名规范</span><span
+lang=EN-US style='background:lime;mso-highlight:lime'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>注意除历史错误俗称的原因以外，类名尽量用大驼峰法，比如</span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>WebBusiness</span></span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>ApiBusinessReport</span></span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>ApiBusinessTools</span></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>等</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>函数，如果是接口类的</span><span lang=EN-US>public</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>函数，一般也用大驼峰，例：</span></p>
+
+<p class=MsoNormal><span class=GramE><span lang=EN-US>public</span></span><span
+lang=EN-US> function <span class=SpellE>WebTest</span>-&gt;<span class=SpellE>TestAbc</span>()</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>如果是非</span><span class=SpellE><span
+lang=EN-US>Api</span></span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>接口类的</span><span
+lang=EN-US>public</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>函数</span> <span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>或</span><span
+lang=EN-US>protected</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>可继承的，一般用小驼峰，例：</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Class <span class=SpellE>LgcTest</span> </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的</span><span lang=EN-US>public function <span class=SpellE>abcDef</span>();</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>如果是私有函数，首字母前加下划线，并使用小驼峰</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Private function _<span class=SpellE><span
+class=GramE>cdef</span></span><span class=GramE>(</span>);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 18.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由于历史原因，少量已经用得比较多错误明名函数有可能一时未能全部改回来</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 18.0pt'><![if !supportLists]><span lang=EN-US style='font-family:
+Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings'><span
+style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由于部分旧代码可以接受非驼峰命名（如下划线法），部分涉及全大定的专用名词缩写在很难阅读的情况下也会使用下划线法</span>
+<span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>如</span><span lang=EN-US> ACE_ACCT</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（当然用</span><span lang=EN-US> <span class=SpellE>AceAcct</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>也是可以）</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='background:lime;mso-highlight:lime'>=</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";background:lime;mso-highlight:lime'>参考资料：《命名法》</span><span
+lang=EN-US style='background:lime;mso-highlight:lime'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>1. </span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>匈牙利法：</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>开头字母用变量类型的缩写，其余部分用大驼峰。</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>比如</span><span lang=EN-US> <span
+class=SpellE>iXXX</span>, <span class=SpellE>iptYYY</span>, <span class=SpellE>strZZZ</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>2. </span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>小驼峰式：</span><span
+lang=EN-US>(little-camel-case)</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>第一个单词首字母小写，后面其他单词首字母大写。</span></p>
+
+<p class=MsoNormal><span lang=EN-US>For example: string <span class=SpellE>firstName</span>
+= <span class=SpellE>string.Empty</span>;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>3. </span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>大驼峰式：</span><span
+lang=EN-US>(big-camel-case) * </span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>有时又叫</span><span
+lang=EN-US>Pascal</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>法，其实两者基本差不多</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>每个单词的第一个字母都大写</span><span lang=EN-US>;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>For example</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US>string <span class=SpellE>FirstName</span> = <span class=SpellE>string.Empty</span>;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>4. C</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>语言法</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>全小写混合，下划线随意</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>5. </span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>下划线法（</span><span
+class=SpellE><span lang=EN-US>php</span></span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>与</span><span
+class=SpellE><span lang=EN-US>perl</span></span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>函数常用）</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>单词之间用下划线间隔，单词本身大小写看情况，但通常是全小写</span></p>
+
+</div>
+
+</body>
+
+</html>
